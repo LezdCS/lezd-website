@@ -165,6 +165,11 @@ p{
     content:'LINK';
 }
 
+.mockup{
+    width: 100%;
+
+}
+
 
 @media only screen and (max-width: 1000px) {
 
@@ -186,26 +191,31 @@ p{
     }
 
     #SeeYou{
-        font-weight: 400;
         font-size: 3.2em;
     }
 
     .icon{
         height: 55pt;
         width: 55pt;
-        padding-right: 10px;
     }
 
 
     .scroll-centered-suggestion>p {
-        text-align: center;
-        max-width: none;
         font-size: 2.3em;
     }
 
     .scroll-centered-suggestion>p>span {
-        color: #57606f;
         font-size: 0.9em;
+    }
+
+    .button-projects {
+        width: 200px;
+        height:70px;
+
+    }
+
+    .button-projects:after {
+        line-height:53px;
     }
 
     .mockup {
