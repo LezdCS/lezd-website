@@ -173,7 +173,7 @@ p{
     }
 
     h2{
-        font-size: 4em;
+        font-size: 3.5em;
     }
 
     #Lezd{
@@ -193,6 +193,18 @@ p{
         height: 55pt;
         width: 55pt;
         padding-right: 10px;
+    }
+
+
+    .scroll-centered-suggestion>p {
+        text-align: center;
+        max-width: none;
+        font-size: 2em;
+    }
+
+    .scroll-centered-suggestion>p>span {
+        color: #57606f;
+        font-size: 0.8em;
     }
 
     .mockup {
