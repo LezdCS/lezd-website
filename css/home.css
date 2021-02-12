@@ -211,11 +211,11 @@ p{
     .button-projects {
         width: 200px;
         height:70px;
-
     }
 
     .button-projects:after {
-        line-height:53px;
+        line-height:54px;
+        font-size: 25px;
     }
 
     .mockup {
