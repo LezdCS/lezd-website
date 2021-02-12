@@ -1,0 +1,211 @@
+body{
+    background-color: #1A202C;
+    color: #EEE;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.fp-tableCell{
+    vertical-align: unset !important;
+}
+
+h1{
+    padding-top: 70px;
+    font-size: 5em;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+#Lezd{
+    font-weight: 500;
+    font-size: 2em;
+}
+
+p{
+    font-size: 1.8em;
+    font-weight: 300;
+    line-height: 1.5;
+    max-width: 26em;
+}
+
+#SeeYou{
+    font-weight: 400;
+    font-size: 1.8em;
+}
+
+.icons{
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+.icon{
+    height: 32pt;
+    width: 32pt;
+    padding-right: 10px;
+}
+
+#twitter-icon{
+    fill: white;
+    transition: fill 0.3s ease-in-out;
+}
+
+#twitter-icon:hover{
+    fill: #1DA1F2;
+}
+
+.scroll-centered-suggestion{
+    padding-top: 80px;
+}
+
+.scroll-centered-suggestion>p {
+    text-align: center;
+    max-width: none;
+}
+
+.scroll-centered-suggestion>p>span {
+    color: #57606f;
+    font-size: 1em;
+}
+
+.link-p{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+
+    background-image: linear-gradient(to bottom, #ff4757 100%, transparent 100%);
+    background-size: auto 5px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    transition: background-size 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);;
+}
+
+.link-p:hover{
+    text-decoration: none;
+    color: white;
+    background-size: auto 100%;
+}
+
+
+.project{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.button-projects {
+    width: 150px;
+    height:50px;
+    border-radius:0px;
+    position:relative;
+    cursor:pointer;
+    line-height:12px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.button-projects:before {
+    content:'';
+    z-index:1;
+    position:absolute;
+    display:block;
+    width:80%;
+    height:70%;
+    top:15%;
+    left:10%;
+    transition: 0.3s opacity ease-in-out;
+    filter:blur(15px);
+    opacity:0;
+}
+
+.button-projects:hover:before {
+    opacity:1;
+    transition: 0.3s opacity ease-in-out;
+    filter:blur(25px);
+}
+
+.button-projects:after {
+    text-align:center;
+    line-height:40px;
+    font-size:18px;
+    color:rgba(235,235,235,1);
+    font-weight:bold;
+    z-index:5;
+    position:absolute;
+    display:block;
+    border-radius:0px;
+    width:92%;
+    height:80%;
+    top:10%;
+    left:4%;
+    background-color:#1A202C;
+}
+
+.github{
+    background: linear-gradient(315deg, #ee8c68 0%, #eb6b9d 74%);
+}
+.github:before{
+    background: linear-gradient(315deg, #ee8c68 0%, #eb6b9d 74%);
+}
+.github:hover:before{
+    background: linear-gradient(315deg, #ee8c68 0%, #eb6b9d 74%);
+}
+.github:after{
+    content:'GITHUB';
+}
+
+.link-project{
+    background: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
+}
+.link-project:before{
+    background: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
+}
+.link-project:hover:before{
+    background: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
+}
+.link-project:after{
+    content:'LINK';
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    h1{
+        font-size: 6em;
+    }
+
+    #Lezd{
+        font-size: 3.5em;
+    }
+
+    p {
+        font-size: 3em;
+    }
+
+    #SeeYou{
+        font-weight: 400;
+        font-size: 3.2em;
+    }
+
+    .icon{
+        height: 55pt;
+        width: 55pt;
+        padding-right: 10px;
+    }
+
+    .button-projects {
+        width: 250px;
+        height:150px;
+        border-radius:0px;
+        position:relative;
+        cursor:pointer;
+        line-height:12px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .mockup {
+        visibility: hidden;
+    }
+
+
+}
+
