@@ -191,17 +191,6 @@ p{
         padding-right: 10px;
     }
 
-    .button-projects {
-        width: 250px;
-        height:150px;
-        border-radius:0px;
-        position:relative;
-        cursor:pointer;
-        line-height:12px;
-        display: inline-block;
-        margin-right: 20px;
-    }
-
     .mockup {
         visibility: hidden;
     }

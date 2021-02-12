@@ -12,7 +12,7 @@
 </head>
 <body>
     <div id="fullpage">
-        <div data-anchor="page1" class="section">
+        <div data-anchor="home" class="section">
             <div style="padding-left: 10%; padding-right: 10%">
                 <h1>Hi.</h1>
                 <p id="Lezd">I'm Lezd.</p>
@@ -55,7 +55,7 @@
             </div>
         </div>
 
-        <div data-anchor="project1" class="project section" >
+        <div data-anchor="musifetch" class="project section" >
             <div style="padding-top: 100px;"></div>
             <h2><span style="color: #ff4757">MusiFetch</span> ? What's that ?</h2>
             <p>MusiFetch is a Python music recognizer program. Using Django as the web Framework, it permit the user to analyze and find what songs are used in a youtube video by just giving the youtube URL.</p>
@@ -64,7 +64,7 @@
             <div class="link-project button-projects" onclick="window.open('https://musifetch.com','_blank');"></div>
         </div>
 
-        <div data-anchor="project2" class="project section">
+        <div data-anchor="geoguessr-enhancer" class="project section">
             <div style="padding-top: 100px;"></div>
             <h2>Find your way with <span style="color: #ff4757">GeoGuessr Enhancer</span></h2>
             <p>A Chrome extension for the online game GeoGuessr. Giving access to the users an easy way to takes notes directly from the game.</p>
@@ -80,7 +80,7 @@
 
 <script>
     new fullpage('#fullpage', {
-        anchors:['page1','project1', 'project2'],
+        anchors:['home','musifetch', 'geoguessr-enhancer'],
         autoScrolling:true,
         scrollHorizontally: true
     });
