@@ -41,15 +41,43 @@ p{
     height: 32pt;
     width: 32pt;
     padding-right: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
+.icon:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
 #twitter-icon{
-    fill: white;
-    transition: fill 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 #twitter-icon:hover{
     fill: #1DA1F2;
+}
+
+#mal-icon{
+    transition: all 0.3s ease-in-out;
+}
+
+#mal-icon:hover{
+    fill: #2e51a2;
+}
+
+#steam-icon{
+    transition: all 0.6s ease-in-out;
+}
+
+#steam-icon:hover{
+    fill: #c5c3c0;
+    -webkit-transform: rotate(360deg) scale(1.2);
+    -ms-transform: rotate(360deg) scale(1.2);
+    transform: rotate(360deg) scale(1.2);
+
+
 }
 
 .scroll-centered-suggestion{
