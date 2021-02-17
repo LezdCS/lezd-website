@@ -45,9 +45,9 @@ p{
 }
 
 .icon:hover{
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 
@@ -60,10 +60,17 @@ p{
 }
 
 #mal-icon{
+    -webkit-transform: scale(1.8);
+    -ms-transform: scale(1.8);
+    transform: scale(1.8);
+    padding-left: 8px;
     transition: all 0.3s ease-in-out;
 }
 
 #mal-icon:hover{
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2);
     fill: #2e51a2;
 }
 
@@ -73,11 +80,9 @@ p{
 
 #steam-icon:hover{
     fill: #c5c3c0;
-    -webkit-transform: rotate(360deg) scale(1.2);
-    -ms-transform: rotate(360deg) scale(1.2);
-    transform: rotate(360deg) scale(1.2);
-
-
+    -webkit-transform: rotate(360deg) scale(1.1);
+    -ms-transform: rotate(360deg) scale(1.1);
+    transform: rotate(360deg) scale(1.1);
 }
 
 .scroll-centered-suggestion{
