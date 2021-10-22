@@ -75,3 +75,17 @@ body{
 .systemdefender-gradient:hover:before{
     background: linear-gradient(315deg, #6c5ce7 0%, #74b9ff 74%);
 }
+
+@media only screen and (max-width: 600px) {
+    .buttonProjectMain{
+        margin-bottom: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 770px) {
+    .buttonProjectMain{
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+}
