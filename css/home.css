@@ -9,7 +9,6 @@ body{
 }
 
 h1{
-    padding-top: 70px;
     font-size: 5em;
     font-weight: 500;
     margin-bottom: 25px;
@@ -85,20 +84,6 @@ p{
     transform: rotate(360deg) scale(1.1);
 }
 
-.scroll-centered-suggestion{
-    padding-top: 80px;
-}
-
-.scroll-centered-suggestion>p {
-    text-align: center;
-    max-width: none;
-}
-
-.scroll-centered-suggestion>p>span {
-    color: #57606f;
-    font-size: 1em;
-}
-
 .link-p{
     color: white;
     text-decoration: none;
@@ -118,85 +103,6 @@ p{
     background-size: auto 100%;
 }
 
-
-.project{
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.button-projects {
-    width: 150px;
-    height:50px;
-    border-radius:0px;
-    position:relative;
-    cursor:pointer;
-    line-height:12px;
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.button-projects:before {
-    content:'';
-    z-index:1;
-    position:absolute;
-    display:block;
-    width:80%;
-    height:70%;
-    top:15%;
-    left:10%;
-    transition: 0.3s opacity ease-in-out;
-    filter:blur(15px);
-    opacity:0;
-}
-
-.button-projects:hover:before {
-    opacity:1;
-    transition: 0.3s opacity ease-in-out;
-    filter:blur(25px);
-}
-
-.button-projects:after {
-    text-align:center;
-    line-height:40px;
-    font-size:18px;
-    color:rgba(235,235,235,1);
-    font-weight:bold;
-    z-index:5;
-    position:absolute;
-    display:block;
-    border-radius:0px;
-    width:92%;
-    height:80%;
-    top:10%;
-    left:4%;
-    background-color:#1A202C;
-}
-
-.github{
-    background: linear-gradient(315deg, #ee8c68 0%, #eb6b9d 74%);
-}
-.github:before{
-    background: linear-gradient(315deg, #ee8c68 0%, #eb6b9d 74%);
-}
-.github:hover:before{
-    background: linear-gradient(315deg, #ee8c68 0%, #eb6b9d 74%);
-}
-.github:after{
-    content:'GITHUB';
-}
-
-.link-project{
-    background: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
-}
-.link-project:before{
-    background: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
-}
-.link-project:hover:before{
-    background: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
-}
-.link-project:after{
-    content:'LINK';
-}
 
 .mockup{
     width: 50%;
