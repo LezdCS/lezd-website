@@ -14,21 +14,11 @@ h1{
     margin-bottom: 25px;
 }
 
-#Lezd{
-    font-weight: 500;
-    font-size: 2em;
-}
-
 p{
     font-size: 1.8em;
     font-weight: 300;
     line-height: 1.5;
     max-width: 26em;
-}
-
-#SeeYou{
-    font-weight: 400;
-    font-size: 1.8em;
 }
 
 .icons{
@@ -101,65 +91,5 @@ p{
     text-decoration: none;
     color: white;
     background-size: auto 100%;
-}
-
-
-.mockup{
-    width: 50%;
-}
-
-
-@media only screen and (max-width: 1000px) {
-
-    h1{
-        font-size: 6em;
-    }
-
-    h2{
-        font-size: 3.5em;
-    }
-
-    #Lezd{
-        font-size: 3.5em;
-    }
-
-    p {
-        font-size: 3em;
-        padding-bottom: 16px;
-    }
-
-    #SeeYou{
-        font-size: 3.2em;
-    }
-
-    .icon{
-        height: 55pt;
-        width: 55pt;
-    }
-
-
-    .scroll-centered-suggestion>p {
-        font-size: 2.3em;
-    }
-
-    .scroll-centered-suggestion>p>span {
-        font-size: 0.9em;
-    }
-
-    .button-projects {
-        width: 200px;
-        height:70px;
-    }
-
-    .button-projects:after {
-        line-height:58px;
-        font-size: 25px;
-    }
-
-    .mockup {
-        visibility: hidden;
-    }
-
-
 }
 
