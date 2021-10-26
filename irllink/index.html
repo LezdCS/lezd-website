@@ -8,8 +8,8 @@
 
 
 <script>
-    var hash = window.location.hash
-    console.log(hash)
+    var hash = window.location.hash.substring(1)
+    window.location.replace("https://irllink.lezd.dev/token"+hash)
 </script>
 </body>
 </html>
