@@ -14,7 +14,7 @@ app.get('/token', (req,res) => {
     res.status(301).redirect(url.format({
         pathname:"dev.lezd.www.irllink:/",
         query: {
-            "access_token:":req.query.access_token
+            "access_token":req.query.access_token
         }
     }));
 
