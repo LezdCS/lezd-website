@@ -10,7 +10,7 @@ h2{
 
 .backHome{
     padding-left: 10px;
-    padding-top: 3%;
+    padding-top: 5%;
 }
 
 .backHome > i {
@@ -53,4 +53,17 @@ hr{
     /* Set the hr color */
     color: white; /* old IE */
     background-color: #2c2c54;/* Modern Browsers */
+}
+
+footer{
+    margin-top:3%;
+}
+
+footer > div > div> p > a{
+    color: #9b59b6;
+}
+
+footer > div > div> p > a:hover{
+    color: #70196B;
+    text-decoration: none;
 }
