@@ -112,22 +112,12 @@ a:hover{
 
 .project{
     margin-bottom: 3%;
-    border: solid 1px #2c2c54;
     border-radius: 10px;
     padding: 5px 5px 10px 10px;
-}
-
-.github-button{
-    margin-right: 5px;
 }
 
 .icon-language-project{
     margin-right: 10px;
     height: 20px;
     margin-bottom: 10px;
-    transition: height 0.2s ease-in-out;
-}
-
-.icon-language-project:hover{
-    height: 30px;
 }
