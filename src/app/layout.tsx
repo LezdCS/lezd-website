@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import { DefaultSeo } from 'next-seo';
 import { AppShell, ColorSchemeScript, MantineProvider } from "@mantine/core";
-import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react"
 import { Work_Sans } from 'next/font/google'
 
@@ -27,21 +25,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <DefaultSeo
-        title="Next SEO Example"
-        description="Next SEO is a plug in that makes managing your SEO easier in Next.js projects."
-        openGraph={{
-          type: 'website',
-          locale: 'en_IE',
-          url: 'https://www.url.ie/',
-          siteName: 'SiteName',
-        }}
-        twitter={{
-          handle: '@handle',
-          site: '@site',
-          cardType: 'summary_large_image',
-        }}
-      />
       <body className={`${workSans.className}`}>
         <ColorSchemeScript />
         <MantineProvider>

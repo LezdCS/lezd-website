@@ -1,3 +1,5 @@
+'use client'
+
 import classes from "./page.module.scss";
 import { NextSeo } from "next-seo";
 
