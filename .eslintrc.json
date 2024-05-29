@@ -1,0 +1,71 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "overrides": [],
+  "parserOptions": {
+    //   "ecmaVersion": "latest",
+    //   "sourceType": "module",
+    "project": "tsconfig.json"
+  },
+  "plugins": [
+    "react-hooks",
+    "prettier"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "comma-dangle": "off",
+    "@typescript-eslint/comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 150,
+        "tabWidth": 2,
+        "ignoreUrls": true,
+        "ignoreStrings": true
+      }
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "jsx-quotes": [
+      "warn",
+      "prefer-single"
+    ],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/space-before-function-paren": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "@typescript-eslint/return-await": "off",
+    "@typescript-eslint/promise-function-async": "off",
+    // Disable super slow promise misuse rule, timings can be checked with
+    // DEBUG=eslint:cli-engine TIMINGS=1 npm run lint
+    "@typescript-eslint/no-misused-promises": "off",
+    "@typescript-eslint/no-confusing-void-expression": [
+      "error",
+      {
+        "ignoreArrowShorthand": true
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "max-lines": [
+      "error",
+      {
+        "max": 400,
+        "skipBlankLines": false,
+        "skipComments": false
+      }
+    ]
+  }
+}
