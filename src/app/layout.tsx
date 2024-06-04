@@ -6,6 +6,8 @@ import { Work_Sans } from 'next/font/google'
 import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
 import "./globals.scss";
+import Navbar from "./components/navbar/navbar";
+import Footer from "./components/footer/footer";
 
 const workSans = Work_Sans({
   subsets: ['latin'],
@@ -31,7 +33,9 @@ export default function RootLayout({
           <Analytics />
           <AppShell>
             <main>
+              <Navbar />
               {children}
+              <Footer />
             </main>
           </AppShell>
         </MantineProvider>
