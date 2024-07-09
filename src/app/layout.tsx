@@ -2,12 +2,11 @@ import type { Metadata } from "next";
 import { AppShell, ColorSchemeScript, MantineProvider } from "@mantine/core";
 import { Analytics } from "@vercel/analytics/react"
 import { Work_Sans } from 'next/font/google'
-
+import Navbar from "../components/navbar/navbar";
+import Footer from "../components/footer/footer";
 import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
-import "./globals.scss";
-import Navbar from "./components/navbar/navbar";
-import Footer from "./components/footer/footer";
+import '../styles/_global.scss';
 
 const workSans = Work_Sans({
   subsets: ['latin'],

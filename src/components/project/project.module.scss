@@ -1,0 +1,16 @@
+.Project {
+    display: flex;
+    gap: 20px;
+
+    &_Text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 75%;
+    }
+
+   img {
+    height: 400px;
+    width: auto;
+   }
+}
