@@ -1,16 +1,27 @@
 .Project {
+  display: flex;
+  gap: 20px;
+
+  &_Text {
     display: flex;
+    flex-direction: column;
     gap: 20px;
+    width: 75%;
+  }
 
-    &_Text {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        width: 75%;
-    }
+  &_Stack {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 
-   img {
+  &_GithubStars {
+    height: auto;
+    width: 80px;
+  }
+
+  &_Image {
     height: 400px;
     width: auto;
-   }
+  }
 }
