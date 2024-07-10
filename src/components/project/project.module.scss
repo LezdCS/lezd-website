@@ -3,6 +3,9 @@
 .Project {
   display: flex;
   gap: 20px;
+  background-color: #0d0312;
+  padding: 20px;
+  border-radius: 10px;
 
   &_Text {
     display: flex;
