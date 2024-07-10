@@ -1,6 +1,6 @@
 import { FC } from "react";
 import classes from "./project.module.scss";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import mockup from "../../../public/mockup_prediction.png";
 import CustomButton from "../custom-buttom/custom-button";
 import StoreButtons from "../stores-buttons/store-buttons";
@@ -9,6 +9,12 @@ interface Props {
   description: string;
   websiteUrl: string;
   githubUrl: string;
+  stacks: Stack[];
+}
+
+interface Stack {
+  title: string,
+  icons: StaticImageData[]
 }
 
 const Project: FC<Props> = (props) => {
@@ -22,9 +28,23 @@ const Project: FC<Props> = (props) => {
           <CustomButton text="Website" url={props.websiteUrl} target={'_blank'} />
         </div>
         {/* <StoreButtons isFooter /> */}
-        <div className={classes.Project_Stack}>
-          <h4>Mobile App</h4>
-          <h4>Website & API</h4>
+        <div className={classes.Project_Stacks}>
+          {props.stacks.map((stack, index) => (
+            <div key={index} className={classes.Project_Stack}>
+              <h4>{stack.title}</h4>
+              <div className={classes.Project_Stack_Icons}>
+                {stack.icons.map((icon, index) => (
+                  <Image
+                    key={index}
+                    alt={stack.title}
+                    src={icon}
+                    width={30}
+                    height={30}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
         <Image
           alt="GitHub Repo stars"
