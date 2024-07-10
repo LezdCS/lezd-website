@@ -5,9 +5,8 @@ const nextConfig = {
     dangerouslyAllowSVG: true,
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'img.shields.io',
-        port: '',
+        protocol: "https",
+        hostname: "**",
       },
     ],
   },
