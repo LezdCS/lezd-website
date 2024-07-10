@@ -1,5 +1,28 @@
+@import "src/styles/_mixins";
+
 .Me {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  gap: 64px;
+  align-items: center;
+
+  @include phone {
+    flex-direction: column;
+  }
+
+  &_Text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &_Buttons {
+    display: flex;
+    gap: 24px;
+  }
+
+  &_Image {
+    height: 100%;
+    width: 200px;
+    border-radius: 100%;
+  }
 }

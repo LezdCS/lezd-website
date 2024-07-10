@@ -6,12 +6,13 @@ import classes from './custom-button.module.scss'
 interface CustomButtonProps {
   text: string,
   url: string,
+  target?: string
 }
 
 const CustomButton: FC<CustomButtonProps> = (props) => {
 
   return (
-    <Link href={props.url} className={`${classes.button} ${classes.mainButton} `}>
+    <Link href={props.url} className={`${classes.button} ${classes.mainButton}`} target={props.target}>
       <span>{props.text}</span><IoMdArrowForward />
     </Link>
   );

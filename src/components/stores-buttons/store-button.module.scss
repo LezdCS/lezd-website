@@ -1,0 +1,33 @@
+@import "src/styles/_mixins";
+
+.StoreButtons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  .GoogleBadge {
+    &__Footer {
+      width: auto;
+      height: 68px;
+    }
+
+    @include phone {
+      width: auto;
+      height: 68px;
+    }
+  }
+
+  .AppStoreBadge {
+    &__Footer {
+      width: auto;
+      height: 48px;
+    }
+
+    @include phone {
+      width: auto;
+      height: 48px;
+    }
+  }
+}

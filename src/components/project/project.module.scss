@@ -1,3 +1,5 @@
+@import "src/styles/_mixins";
+
 .Project {
   display: flex;
   gap: 20px;
@@ -7,6 +9,11 @@
     flex-direction: column;
     gap: 20px;
     width: 75%;
+  }
+
+  &_Buttons {
+    display: flex;
+    gap: 24px;
   }
 
   &_Stack {
@@ -23,5 +30,9 @@
   &_Image {
     height: 400px;
     width: auto;
+
+    @include phone {
+      display: none;
+    }
   }
 }

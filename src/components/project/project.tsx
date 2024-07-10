@@ -1,10 +1,9 @@
 import { FC } from "react";
 import classes from "./project.module.scss";
 import Image from "next/image";
-import Link from "next/link";
 import mockup from "../../../public/mockup_prediction.png";
 import CustomButton from "../custom-buttom/custom-button";
-
+import StoreButtons from "../stores-buttons/store-buttons";
 interface Props {
   title: string;
   description: string;
@@ -18,11 +17,11 @@ const Project: FC<Props> = (props) => {
       <div className={classes.Project_Text}>
         <h3>{props.title}</h3>
         <p>{props.description}</p>
-        <div className={classes.Project_Links}>
-          <CustomButton text="GitHub" url={props.githubUrl} />
-          <CustomButton text="Website" url={props.websiteUrl} />
+        <div className={classes.Project_Buttons}>
+          <CustomButton text="GitHub" url={props.githubUrl} target={'_blank'} />
+          <CustomButton text="Website" url={props.websiteUrl} target={'_blank'} />
         </div>
-
+        {/* <StoreButtons isFooter /> */}
         <div className={classes.Project_Stack}>
           <h4>Mobile App</h4>
           <h4>Website & API</h4>
