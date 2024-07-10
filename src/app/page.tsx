@@ -8,6 +8,7 @@ import flutter from "../../public/icons/flutter.svg";
 import firebase from "../../public/icons/firebase.svg";
 import android from "../../public/icons/android.svg";
 import ios from "../../public/icons/ios.svg";
+import nodejs from "../../public/icons/nodejs.svg";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Me />
       <div>
         <h2>My projects</h2>
+        <br />
         <Project
           title={"IRL Link"}
           description={
@@ -29,7 +31,7 @@ const Home = () => {
             },
             {
               title: "Website & API",
-              icons: [react, typescript, nextjs],
+              icons: [react, typescript, nextjs, nodejs],
             },
           ]}
         />

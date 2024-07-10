@@ -10,15 +10,15 @@ const Me: FC = () => {
       <div className={classes.Me_Text}>
         <h3>Hey 👋 </h3>
         <p>
-          I am <b>Julien</b>, a Full-Stack developer from France 🇫🇷 living in Tokyo 🇯🇵.
+          I am <b>Julien</b>, a Full-Stack developer from France 🇫🇷 but living in Tokyo 🇯🇵.
         </p>
-        <p>I spend most of my time with friends or working on my projects :)</p>
+        <p>I spend most of my time with my friends or working on my projects :)</p>
         <p>
           Most of what I do is <b>open-source</b>!
         </p>
         <div className={classes.Me_Buttons}>
-          <CustomButton text="Contact me" url="/contact" />
-          <CustomButton text="My Projects" url="/projects" />
+          <CustomButton text="Contact me" url="https://x.com/LezdCS" target="_blank"/>
+          <CustomButton text="My Projects" url="#projects" />
         </div>
       </div>
       <Image
