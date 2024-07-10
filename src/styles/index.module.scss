@@ -1,0 +1,13 @@
+@import "src/styles/_mixins";
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  padding: 0 10% 0 10%;
+
+  @include phone {
+    padding: 20px;
+  }
+}

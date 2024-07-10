@@ -1,0 +1,52 @@
+:root {
+  --irl-button-purple-1: #8253f120;
+  --irl-button-purple-3: #89179b80;
+  --irl-gradient-purple: linear-gradient(
+    to right,
+    var(--irl-button-purple-1),
+    var(--irl-button-purple-3),
+    var(--irl-button-purple-1)
+  );
+  --irl-gradient-text: radial-gradient(circle at 10% 20%, rgb(137, 23, 155) 0%, rgb(131, 83, 241) 90.1%);
+
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  background-color: #0a010f;
+  color: white;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}

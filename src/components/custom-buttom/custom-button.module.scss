@@ -1,0 +1,50 @@
+@import "/src/styles/mixins";
+
+a.button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+
+a.button > span {
+  position: relative;
+
+  @include tablet-medium {
+    text-align: center;
+  }
+}
+
+a.button > svg {
+  transition: all 0.3s ease;
+  position: relative;
+  left: -16px;
+  margin-right: -16px;
+  opacity: 0;
+  transform: scaleX(0%);
+  transform-origin: center left;
+}
+
+a.button:hover > svg {
+  left: 0px;
+  margin-right: 0px;
+  opacity: 1;
+  transform: scaleX(100%);
+}
+
+/* MAIN CTA */
+a.button.mainButton {
+  width: fit-content;
+  color: white;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 8px;
+  background-image: var(--irl-gradient-purple);
+  background-size: 200% 100%;
+  background-position: center left;
+  transition: all 0.3s ease;
+}
+
+a.button.mainButton:hover {
+  background-position: center right;
+}

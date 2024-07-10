@@ -1,0 +1,59 @@
+@import "src/styles/_mixins";
+
+.Project {
+  display: flex;
+  gap: 20px;
+  background-color: #0d0312;
+  padding: 20px;
+  border-radius: 10px;
+
+  &_Text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 75%;
+
+    h3 {
+      background: var(--irl-gradient-text);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &_Buttons {
+    display: flex;
+    gap: 24px;
+  }
+
+  &_Stacks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &_Stack {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &_Icons {
+      display: flex;
+      gap: 18px;
+    }
+  }
+
+  &_GithubStars {
+    height: auto;
+    width: 80px;
+  }
+
+  &_Image {
+    height: 400px;
+    width: auto;
+
+    @include phone {
+      display: none;
+    }
+  }
+}
