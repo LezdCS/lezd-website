@@ -6,6 +6,7 @@
   background-color: #0d0312;
   padding: 20px;
   border-radius: 10px;
+  justify-content: space-between;
 
   &_Text {
     display: flex;
@@ -15,10 +16,15 @@
 
     h3 {
       background: var(--irl-gradient-text);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
+  }
+
+  &_Badges {
+    display: flex;
+    gap: 10px;
   }
 
   &_Buttons {
@@ -46,6 +52,11 @@
   &_GithubStars {
     height: auto;
     width: 80px;
+  }
+
+  &_AndroidInstalls {
+    height: auto;
+    width: 120px;
   }
 
   &_Image {
