@@ -2,11 +2,17 @@
 
 .Me {
   display: flex;
+  flex-direction: column;
   gap: 64px;
-  align-items: center;
 
-  @include phone {
-    flex-direction: column;
+  &_Main {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+
+    @include phone {
+      flex-direction: column;
+    }
   }
 
   &_Text {
@@ -24,5 +30,16 @@
     height: 100%;
     width: 200px;
     border-radius: 100%;
+  }
+
+  &_Socials {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  &_SocialIcon {
+    height: 32px;
+    width: 32px;
   }
 }
